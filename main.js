@@ -45,30 +45,4 @@ let age = '';
     });
   }
 
-  //fetching data
-  //passing mathods and properties of the XMLHttpRequest object
-  let ftch = new XMLHttpRequest();
   
-  //prepare the request
-  ftch.open('get', 'myjson.json', true);
-  //send the request
-  ftch.send();
-  //catching the response
-  ftch.onload = function()
-  {
-    let meee = document.getElementById("file");
-    
-    //checking the readyState and the status of the request
-    if(this.readyState == 4 && this.status == 200)
-    {
-        let myDataFromJson = JSON.parse(this.responseText);
-        console.log(myDataFromJson.name);
-        
-        //filling the form
-            //console.log(Name)
-            document.getElementById("name").value = Name;
-            document.getElementById("surname").value = surname;
-            document.getElementById("gender").value = gender;
-            document.getElementById("age").value = age; 
-    }
-  }
