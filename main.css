@@ -1,0 +1,19 @@
+#fileDecor
+{
+    text-align: center;
+    padding: 8%;
+    margin-top: 8%;
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: rgb(10, 53, 73);
+    border: 2px;
+}
+#formdiv
+{
+    text-align: center;
+    padding: 8%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: whitesmoke;
+    border: 2px;
+}
